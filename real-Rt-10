@@ -1,0 +1,25 @@
+import pandas as pd
+import numpy as np
+
+from matplotlib import pyplot as plt
+from matplotlib.dates import date2num, num2date
+from matplotlib import dates as mdates
+from matplotlib import ticker
+from matplotlib.colors import ListedColormap
+from matplotlib.patches import Patch
+
+from scipy import stats as sps
+from scipy.interpolate import interp1d
+
+from IPython.display import clear_output
+
+FILTERED_REGIONS = [
+    'Virgin Islands',
+    'American Samoa',
+    'Northern Mariana Islands',
+    'Guam',
+    'Puerto Rico']
+
+FILTERED_REGION_CODES = ['AS', 'GU', 'PR', 'VI', 'MP']
+
+%config InlineBackend.figure_format = 'retina'
